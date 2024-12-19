@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  youtube-downloader:
+    build: .
+    container_name: youtube_downloader
+    volumes:
+      - ./downloads:/downloads
+    stdin_open: true
+    tty: true
